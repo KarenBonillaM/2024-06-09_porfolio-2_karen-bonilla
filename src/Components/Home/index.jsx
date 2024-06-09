@@ -30,7 +30,7 @@ function Home() {
                   target="_blank"
                   rel="noopener noreferrer">
                   <img
-                    className="h-6 w-6 md:h-8 md:w-8 lg:h-10 lg:w-10 mr-5"
+                    className="h-6 w-6 md:h-8 md:w-8 lg:h-10 lg:w-10 mr-5 hover:scale-125 transform transition duration-500 ease-in-out"
                     src={Linkedin}
                     alt="Linkedin logo"
                   />
@@ -42,7 +42,7 @@ function Home() {
                   target="_blank"
                   rel="noopener noreferrer">
                   <img
-                    className="h-6 w-6 md:h-8 md:w-8 lg:h-10 lg:w-10"
+                    className="h-6 w-6 md:h-8 md:w-8 lg:h-10 lg:w-10 hover:scale-125 transform transition duration-500 ease-in-out"
                     src={Github}
                     alt="GitHub logo"
                   />
