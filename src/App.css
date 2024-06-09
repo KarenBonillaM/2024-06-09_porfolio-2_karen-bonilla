@@ -1,6 +1,6 @@
-.App {
-  text-align: center;
-}
+/* * {
+  outline: 1px solid pink;
+} */
 
 .App-logo {
   height: 40vmin;
@@ -36,3 +36,57 @@
     transform: rotate(360deg);
   }
 }
+
+.photo {
+  background-image: url("../src/Images/IMG_20240605_104931_377.jpg");
+  width: 180px;
+  height: 180px;
+  background-size: cover;
+  background-position: center center;
+  margin: auto;
+  /* box-shadow: 5px 5px 5px 5px rgba(60, 60, 60, 0.2); */
+  box-shadow: 5px 5px 5px 5px rgba(125, 13, 253, 0.3);
+  animation: animate 5s ease-in-out infinite;
+  transition: all 1s ease-in-out;
+}
+
+@keyframes animate {
+  0%, 100% {
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  }
+  50% {
+    border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+  }
+}
+
+.about-me-photo {
+  background-image: url("../src/Images/dublin.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+
+
+@media (min-width: 768px) and (max-width: 1023px) { 
+  .photo {
+    width: 280px;
+    height: 280px;
+    margin: 20px;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1279px){ 
+  .photo {
+    width: 320px;
+    height: 320px;
+    margin: 20px;
+  }
+ }
+
+ @media (min-width: 1280px) { 
+  .photo {
+    width: 380px;
+    height: 380px;
+    margin: 20px;
+  }
+
+  }
