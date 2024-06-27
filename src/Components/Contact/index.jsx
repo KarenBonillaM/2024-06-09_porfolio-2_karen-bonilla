@@ -10,12 +10,12 @@ function Contact() {
         <h2 className="text-xl font-bold pb-4 text-black md:text-2xl lg:text-4xl md:mb-16">
           Contact Me
         </h2>
-        <div className="flex flex-col bg-white rounded shadow-md text-slate-500 shadow-slate-200 sm:flex-row justify-between">
+        <div className="flex flex-col bg-white rounded shadow-md text-slate-500 shadow-slate-200 xl:flex-row justify-between">
           <div className="flex items-center hover:scale-110 transform transition duration-500 ease-in-out">
             <img
               src={Email}
               alt="email"
-              className="m-3 h-8 w-8 md:h-14 md:w-14"
+              className="m-3 h-8 w-8 md:h-10 md:w-10"
             />
             karenbonillamoreno@gmail.com
           </div>
@@ -23,7 +23,7 @@ function Contact() {
             <img
               src={Phone}
               alt="email"
-              className="m-3 h-8 w-8 md:h-14 md:w-14"
+              className="m-3 h-8 w-8 md:h-10 md:w-10"
             />
             +46 70 172 20 52
           </div>
@@ -31,7 +31,7 @@ function Contact() {
             <img
               src={Location}
               alt="email"
-              className="m-3 h-8 w-8 md:h-14 md:w-14"
+              className="m-3 h-8 w-8 md:h-10 md:w-10"
             />
             Stockholm, Sweden
           </div>
