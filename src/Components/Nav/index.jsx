@@ -1,9 +1,11 @@
-import React, { useState, useContext } from "react";
+import React, { useState, useContext, useEffect, useRef } from "react";
 import { NavLink } from "react-router-dom/dist";
 import { SectionRefsContext } from "../ContextForRefs";
 
 function Nav() {
   const [isToggleOpen, setIsToggleOpen] = useState(false);
+  const menuRef = useRef(null);
+  const triggerRef = useRef(null);
   const { homeRef, aboutRef, projectsRef, contactRef } =
     useContext(SectionRefsContext);
 
@@ -14,7 +16,26 @@ function Nav() {
         behavior: "smooth",
       });
     }
+    setIsToggleOpen(false);
   };
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (
+        menuRef.current &&
+        !menuRef.current.contains(event.target) &&
+        triggerRef.current &&
+        !triggerRef.current.contains(event.target)
+      ) {
+        setIsToggleOpen(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [menuRef, triggerRef]);
 
   return (
     <nav className="relative mx-auto max-w-full px-6 lg:max-w-5xl xl:max-w-7xl 2xl:max-w-[96rem] font-bold bg-white">
@@ -29,6 +50,7 @@ function Nav() {
 
         {/*      <!-- Mobile trigger --> */}
         <button
+          ref={triggerRef}
           className={`relative order-10 block h-10 w-10 self-center lg:hidden
                 ${
                   isToggleOpen
@@ -53,7 +75,8 @@ function Nav() {
         </button>
 
         <ul
-          className={`absolute left-0 top-0 z-[-1] h-[28.5rem] w-full justify-center overflow-hidden  overflow-y-auto overscroll-contain px-8 pb-12 pt-24 font-medium transition-[opacity,visibility] duration-300 lg:visible lg:relative lg:top-0  lg:z-0 lg:flex lg:h-full lg:w-auto lg:items-stretch lg:overflow-visible lg:bg-white/0 lg:px-0 lg:py-0  lg:pt-0 lg:opacity-100 font-bold ${
+          ref={menuRef}
+          className={`absolute left-0 top-0 z-[-1] h-[22.5rem] w-full justify-center overflow-hidden  overflow-y-auto overscroll-contain px-8 pb-12 pt-24 font-medium transition-[opacity,visibility] duration-300 lg:visible lg:relative lg:top-0  lg:z-0 lg:flex lg:h-full lg:w-auto lg:items-stretch lg:overflow-visible lg:bg-white/0 lg:px-0 lg:py-0  lg:pt-0 lg:opacity-100 font-bold bg-white ${
             isToggleOpen
               ? "visible opacity-100 backdrop-blur-sm"
               : "invisible opacity-0"
