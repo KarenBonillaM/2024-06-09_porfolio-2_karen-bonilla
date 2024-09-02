@@ -13,7 +13,7 @@ import Sass from "../../Images/Sass.png";
 function Home() {
   return (
     <div className="grid grid-cols-4 gap-6 md:grid-cols-8 lg:grid-cols-12 px-5 md:px-28 lg:px-36 xl:px-52">
-      <div className="col-span-4 md:col-span-8 lg:col-span-12 my-16 mx-5 md:mx-12 lg:mx-16 md:my-24 lg:my-32">
+      <div className="col-span-4 md:col-span-8 lg:col-span-12 my-16 mx-2 md:mx-12 lg:mx-16 md:my-24 lg:my-32">
         <div className="grid md:flex lg:flex">
           <div className="grid content-center">
             <h1 className="text-xl font-bold pb-8 md:text-3xl lg:text-5xl">

@@ -8,13 +8,13 @@ import Github from "../../Images/github.png";
 function Projects() {
   return (
     <div className="grid grid-cols-4 gap-6 md:grid-cols-8 lg:grid-cols-12 px-5 md:px-28 lg:px-36 xl:px-52">
-      <div className="col-span-4 md:col-span-8 lg:col-span-12 my-16 mx-5 md:mx-12 lg:mx-16 md:my-24 lg:my-32">
-        <h2 className="text-xl font-bold pb-4 text-black md:text-2xl lg:text-4xl md:mb-16">
+      <div className="col-span-4 md:col-span-8 lg:col-span-12 my-16 mx-2 md:mx-12 lg:mx-16 md:my-24 lg:my-32">
+        <h2 className="text-xl font-bold pb-4 pl-2 text-black md:text-2xl lg:text-4xl md:mb-16">
           Projects
         </h2>
         <div>
-          <div className="flex flex-col bg-white rounded shadow-md text-slate-500 shadow-slate-200 sm:flex-row">
-            <div className="flex-1 py-6 md:p-6 sm:mr-6 sm:px-0">
+          <div className="flex flex-col bg-white rounded shadow-md text-slate-500 shadow-slate-200 sm:flex-row pb-3">
+            <div className="flex-1 py-6 md:p-6 sm:mr-6 sm:px-0 px-2 pb-2">
               <div className="flex gap-4 mb-4">
                 <h3 className="text-xl font-semibold text-purple-700 text-slate-700">
                   Decor Auction
@@ -76,10 +76,10 @@ function Projects() {
         </div>
       </div>
 
-      <div className="col-span-4 md:col-span-8 lg:col-span-12 my-16 mx-5 md:mx-12 lg:mx-16 md:my-24 lg:my-32">
+      <div className="col-span-4 md:col-span-8 lg:col-span-12 my-16 mx-2 md:mx-12 lg:mx-16 md:my-24 lg:my-32">
         <div>
           <div className="md:flex bg-white rounded shadow-md text-slate-500 shadow-slate-200 grid grid-flow-row auto-rows-auto md:flex-row">
-            <div className="md:flex-1 mt-11 md:mt-0 row-start-2">
+            <div className="md:flex-1 mt-11 md:mt-0 row-start-2 pb-2">
               <div className="h-64 w-44 m-auto md:h-full md:w-full border-8 border-purple-700 relative md:m-0">
                 <div className="absolute h-64 w-44 md:h-full md:w-full overflow-scroll -top-11 -left-11 z-50">
                   <img
@@ -95,7 +95,7 @@ function Projects() {
                 </div>
               </div>
             </div>
-            <div className="flex-1 py-6 md:p-6 sm:mr-6 sm:px-0">
+            <div className="flex-1 py-6 md:p-6 sm:mr-6 sm:px-0 px-2 pb-2">
               <div className="flex gap-4 mb-4">
                 <h3 className="text-xl font-medium text-slate-700">
                   The ShopNet
@@ -145,10 +145,10 @@ function Projects() {
         </div>
       </div>
 
-      <div className="col-span-4 md:col-span-8 lg:col-span-12 my-16 mx-5 md:mx-12 lg:mx-16 md:my-24 lg:my-32">
+      <div className="col-span-4 md:col-span-8 lg:col-span-12 my-16 mx-2 md:mx-12 lg:mx-16 md:my-24 lg:my-32">
         <div>
-          <div className="flex flex-col bg-white rounded shadow-md text-slate-500 shadow-slate-200 sm:flex-row">
-            <div className="flex-1 py-6 md:p-6 sm:mr-6 sm:px-0">
+          <div className="flex flex-col bg-white rounded shadow-md text-slate-500 shadow-slate-200 sm:flex-row pb-2">
+            <div className="flex-1 py-6 md:p-6 sm:mr-6 sm:px-0 px-2 pb-2">
               <div className="flex gap-4 mb-4">
                 <h3 className="text-xl font-medium text-slate-700">Holidaze</h3>
               </div>

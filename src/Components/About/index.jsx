@@ -3,12 +3,12 @@ import React from "react";
 function About() {
   return (
     <div className="grid grid-cols-4 gap-6 md:grid-cols-8 lg:grid-cols-12 px-5 md:px-28 lg:px-36 xl:px-52">
-      <div className="col-span-4 md:col-span-8 lg:col-span-12 my-16 mx-5 md:mx-12 lg:mx-16 md:my-24 lg:my-32">
-        <div className="flex flex-col bg-white rounded shadow-md text-slate-500 shadow-slate-200 sm:flex-row">
+      <div className="col-span-4 md:col-span-8 lg:col-span-12 my-16 mx-2 md:mx-12 lg:mx-16 md:my-24 lg:my-32">
+        <div className="md:flex bg-white rounded shadow-md text-slate-500 shadow-slate-200 sm:flex-row">
           <div className="border-8 relative border-purple-700 w-44 h-56 lg:w-64 m-auto lg:h-96 md:w-52 md:h-72 rounded md:m-0">
             <div className="about-me-photo absolute -top-11 -left-9 w-44 h-56 lg:w-64 lg:h-96 md:w-52 md:h-72 rounded"></div>
           </div>
-          <div className="flex-1 md:pl-6 sm:ml-6 sm:px-0 pt-5 md:pt-0">
+          <div className="flex-1 md:pl-6 sm:mx-6 sm:px-0 pt-5 px-2 pb-2 md:pt-0">
             <h2 className="text-xl font-bold pb-4 text-black md:text-2xl lg:text-4xl">
               About Me
             </h2>
