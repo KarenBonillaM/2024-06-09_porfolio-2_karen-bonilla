@@ -13,8 +13,8 @@ function Projects() {
           Projects
         </h2>
         <div>
-          <div className="flex flex-col bg-white rounded shadow-md text-slate-500 shadow-slate-200 sm:flex-row pb-3">
-            <div className="flex-1 py-6 md:p-6 sm:mr-6 sm:px-0 px-2 pb-2">
+          <div className="md:flex bg-white rounded shadow-md text-slate-500 shadow-slate-200 sm:flex-row pb-3">
+            <div className="flex-1 py-6 md:p-6 sm:mx-6 sm:px-0 px-2 pb-2">
               <div className="flex gap-4 mb-4">
                 <h3 className="text-xl font-semibold text-purple-700 text-slate-700">
                   Decor Auction
@@ -95,9 +95,9 @@ function Projects() {
                 </div>
               </div>
             </div>
-            <div className="flex-1 py-6 md:p-6 sm:mr-6 sm:px-0 px-2 pb-2">
+            <div className="flex-1 py-6 md:p-6 sm:mx-6 sm:px-0 px-2 pb-2">
               <div className="flex gap-4 mb-4">
-                <h3 className="text-xl font-medium text-slate-700">
+                <h3 className="text-xl font-semibold text-slate-700">
                   The ShopNet
                 </h3>
               </div>
@@ -147,10 +147,12 @@ function Projects() {
 
       <div className="col-span-4 md:col-span-8 lg:col-span-12 my-16 mx-2 md:mx-12 lg:mx-16 md:my-24 lg:my-32">
         <div>
-          <div className="flex flex-col bg-white rounded shadow-md text-slate-500 shadow-slate-200 sm:flex-row pb-2">
-            <div className="flex-1 py-6 md:p-6 sm:mr-6 sm:px-0 px-2 pb-2">
+          <div className="md:flex bg-white rounded shadow-md text-slate-500 shadow-slate-200 sm:flex-row pb-2">
+            <div className="flex-1 py-6 md:p-6 sm:mx-6 sm:px-0 px-2 pb-2">
               <div className="flex gap-4 mb-4">
-                <h3 className="text-xl font-medium text-slate-700">Holidaze</h3>
+                <h3 className="text-xl font-semibold text-slate-700">
+                  Holidaze
+                </h3>
               </div>
               <p>
                 This project is an accommodation booking site built using React
